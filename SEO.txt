@@ -1,0 +1,13 @@
+Cambios realizados para mejorar el SEO de mi sitio Web:
+
+- Keywords especificas para cada pagina.
+
+- Titulo de pagina personalizado para cada pagina.
+
+- Etiqueta "meta description" personalizada para cada pagina.
+
+- Agregado de etiquetas <strong>.
+
+- Agregado de la propiedad "alt" en las imagenes.
+
+- Cambio de etiquetas <p> del footer por <h6>

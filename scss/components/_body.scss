@@ -1,0 +1,168 @@
+body {
+    background-color: $blue;
+    color: $grey;
+
+    @mixin width ($min-width, $max-width){
+        min-width: $min-width;
+        max-width: $max-width;
+    }
+    .fotoMolino {
+        width: 45%;
+        img {
+            width: 90%;
+            @include width(200px, 400px);
+        }
+    }
+    iframe {
+        width: 90%;
+        @include width(300px, 500px);
+    }
+
+    /* --- ANIMACION H1 ---*/
+    h1 {
+        -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+
+    @-webkit-keyframes tracking-in-expand {
+        0% {
+            letter-spacing: -0.5em;
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0.6;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes tracking-in-expand {
+        0% {
+            letter-spacing: -0.5em;
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0.6;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    /* ------------------- */
+
+    h2 {
+        margin: 0 !important;
+    }
+
+    $span :(
+        color : $orange,
+        font-weight : 500
+    );
+
+    span {
+        color: map-get($span, color);
+        font-weight: map-get($span, font-weight);
+    }
+
+    .textoServicios {
+        width: 95%;
+        max-width: 600px;
+    }
+
+    .linkPlanta{
+        a {
+            text-decoration: underline;
+            color: $grey;
+        }
+        
+    }
+
+    .trabajosEspeciales {
+        width: fit-content;
+        max-width: 600px !important;
+
+        border: $orange solid 2px;
+        border-radius: 10px;
+        font-size: large;
+        font-weight: 700;
+    }
+    .medidaCarousel {
+        width: 70%;
+        max-width: 1200px;
+    }
+    .quienesSomos {
+        width: 90%;
+        @include width(350px, 450px);
+        margin: 5rem 2rem;
+    }
+    .textoQuienes {
+        max-width: 700px;
+    }
+    .filaQuienes {
+        height: 50vh;
+    }
+    .imgEquipo {
+        width: 90%;
+        @include width(350px, 600px);
+    }
+
+    .textoMision {
+        max-width: 900px;
+    }
+    .imgClientes {
+        @extend .imgEquipo;
+        border-radius: 5px;
+    }
+
+    .listaClientes {
+        a {
+            color: $grey;
+        }
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: space-between;
+
+        width: 95%;
+        max-width: 800px;
+        height: 80vh;
+        padding: 2rem;
+        margin: 2rem 0;
+
+        border: $grey solid 2px;
+        border-radius: 10px;
+        .formButton {
+            width: 30%;
+            align-self: center;
+            margin: 0.2rem;
+            background-color: $blue;
+            color: $orange;
+            border: $orange solid 2px;
+            border-radius: 5px;
+        }
+    }
+    
+
+    .whatsapp {
+        width: 15%;
+        max-width: 80px;
+        position: fixed;
+        bottom: 4rem;
+        right: 1rem;
+    }
+    nav {
+        a {
+            color: $blue !important;
+        }
+        
+    }
+}

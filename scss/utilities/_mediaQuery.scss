@@ -1,0 +1,66 @@
+@media screen and (min-width: 1200px) {
+    nav a:hover {
+        color: $orange !important;
+    }
+    .linkPlanta a:hover {
+        color: $orange;
+    }
+
+    .trabajosEspeciales:hover {
+        background: rgb(247, 152, 36);
+        background: linear-gradient(15deg, rgba(247, 152, 36, 1) 0%, rgba(177, 193, 192, 1) 100%);
+        color: $blue;
+        font-weight: 700;
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: transform 0.6s;
+    }
+
+    nav a:hover {
+        color: $orange !important;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s;
+    }
+
+    .quienesSomos {
+        filter: grayscale(1);
+    }
+    .quienesSomos:hover{
+        filter: grayscale(0);
+    }
+
+    .formButton:hover {
+        background: linear-gradient(15deg, rgba(247, 152, 36, 1) 0%, rgba(177, 193, 192, 1) 100%);
+        color: $blue;
+        transform: scale(1.1);
+        transition: transform 0.5s;
+    }
+    h2:hover {
+        animation-name: hoverh2;
+        animation-duration: 0.5s;
+    }
+    @keyframes hoverh2 {
+        0% {
+            transform: translateY(10px);
+        }
+        25% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(7px);
+        }
+        75% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(3px);
+        }
+    }
+    .listaClientes a:hover {
+        color: $orange;
+        font-size: 1.2em;
+    }
+}

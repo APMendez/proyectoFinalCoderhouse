@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif;
+  font-weight: 300; }
+
+@media screen and (min-width: 1200px) {
+  nav a:hover {
+    color: #F79824 !important; }
+  .linkPlanta a:hover {
+    color: #F79824; }
+  .trabajosEspeciales:hover {
+    background: #f79824;
+    background: linear-gradient(15deg, #f79824 0%, #b1c1c0 100%);
+    color: #001b38;
+    font-weight: 700;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.6s; }
+  nav a:hover {
+    color: #F79824 !important; }
+  img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s; }
+  .quienesSomos {
+    filter: grayscale(1); }
+  .quienesSomos:hover {
+    filter: grayscale(0); }
+  .formButton:hover {
+    background: linear-gradient(15deg, #f79824 0%, #b1c1c0 100%);
+    color: #001b38;
+    transform: scale(1.1);
+    transition: transform 0.5s; }
+  h2:hover {
+    animation-name: hoverh2;
+    animation-duration: 0.5s; }
+  @keyframes hoverh2 {
+    0% {
+      transform: translateY(10px); }
+    25% {
+      transform: translateY(0); }
+    50% {
+      transform: translateY(7px); }
+    75% {
+      transform: translateY(0); }
+    100% {
+      transform: translateY(3px); } }
+  .listaClientes a:hover {
+    color: #F79824;
+    font-size: 1.2em; } }
+
+header {
+  background-color: #d4d4d4; }
+  header img {
+    min-width: 100px;
+    max-width: 150px;
+    margin: 1rem 0;
+    animation: entradaLogo 2s 0.4s; }
+
+@keyframes entradaLogo {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+footer {
+  background-color: #d4d4d4;
+  color: #001b38; }
+  footer li {
+    border-right: #001b38 solid 2px; }
+
+.mapaFooter {
+  min-width: 20px;
+  max-width: 50px; }
+
+body {
+  background-color: #001b38;
+  color: #d4d4d4;
+  /* --- ANIMACION H1 ---*/
+  /* ------------------- */ }
+  body .fotoMolino {
+    width: 45%; }
+    body .fotoMolino img {
+      width: 90%;
+      min-width: 200px;
+      max-width: 400px; }
+  body iframe {
+    width: 90%;
+    min-width: 300px;
+    max-width: 500px; }
+  body h1 {
+    -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+  body h2 {
+    margin: 0 !important; }
+  body span {
+    color: #F79824;
+    font-weight: 500; }
+  body .textoServicios {
+    width: 95%;
+    max-width: 600px; }
+  body .linkPlanta a {
+    text-decoration: underline;
+    color: #d4d4d4; }
+  body .trabajosEspeciales {
+    width: fit-content;
+    max-width: 600px !important;
+    border: #F79824 solid 2px;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 700; }
+  body .medidaCarousel {
+    width: 70%;
+    max-width: 1200px; }
+  body .quienesSomos {
+    width: 90%;
+    min-width: 350px;
+    max-width: 450px;
+    margin: 5rem 2rem; }
+  body .textoQuienes {
+    max-width: 700px; }
+  body .filaQuienes {
+    height: 50vh; }
+  body .imgEquipo, body .imgClientes {
+    width: 90%;
+    min-width: 350px;
+    max-width: 600px; }
+  body .textoMision {
+    max-width: 900px; }
+  body .imgClientes {
+    border-radius: 5px; }
+  body .listaClientes a {
+    color: #d4d4d4; }
+  body .formulario {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: space-between;
+    width: 95%;
+    max-width: 800px;
+    height: 80vh;
+    padding: 2rem;
+    margin: 2rem 0;
+    border: #d4d4d4 solid 2px;
+    border-radius: 10px; }
+    body .formulario .formButton {
+      width: 30%;
+      align-self: center;
+      margin: 0.2rem;
+      background-color: #001b38;
+      color: #F79824;
+      border: #F79824 solid 2px;
+      border-radius: 5px; }
+  body .whatsapp {
+    width: 15%;
+    max-width: 80px;
+    position: fixed;
+    bottom: 4rem;
+    right: 1rem; }
+  body nav a {
+    color: #001b38 !important; }
