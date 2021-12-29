@@ -48,7 +48,9 @@
       transform: translateY(3px); } }
   .listaClientes a:hover {
     color: #F79824;
-    font-size: 1.2em; } }
+    font-size: 1.2em; }
+  .textoClientes {
+    max-width: 900px; } }
 
 header {
   background-color: #d4d4d4; }
