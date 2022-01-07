@@ -5,53 +5,6 @@
   font-family: roboto, sans-serif;
   font-weight: 300; }
 
-@media screen and (min-width: 1200px) {
-  nav a:hover {
-    color: #F79824 !important; }
-  .linkPlanta a:hover {
-    color: #F79824; }
-  .trabajosEspeciales:hover {
-    background: #f79824;
-    background: linear-gradient(15deg, #f79824 0%, #b1c1c0 100%);
-    color: #001b38;
-    font-weight: 700;
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: transform 0.6s; }
-  nav a:hover {
-    color: #F79824 !important; }
-  img:hover {
-    transform: scale(1.1);
-    transition: transform 0.5s; }
-  .quienesSomos {
-    filter: grayscale(1); }
-  .quienesSomos:hover {
-    filter: grayscale(0); }
-  .formButton:hover {
-    background: linear-gradient(15deg, #f79824 0%, #b1c1c0 100%);
-    color: #001b38;
-    transform: scale(1.1);
-    transition: transform 0.5s; }
-  h2:hover {
-    animation-name: hoverh2;
-    animation-duration: 0.5s; }
-  @keyframes hoverh2 {
-    0% {
-      transform: translateY(10px); }
-    25% {
-      transform: translateY(0); }
-    50% {
-      transform: translateY(7px); }
-    75% {
-      transform: translateY(0); }
-    100% {
-      transform: translateY(3px); } }
-  .listaClientes a:hover {
-    color: #F79824;
-    font-size: 1.2em; }
-  .textoClientes {
-    max-width: 900px; } }
-
 header {
   background-color: #d4d4d4; }
   header img {
@@ -68,13 +21,48 @@ header {
 
 footer {
   background-color: #d4d4d4;
-  color: #001b38; }
-  footer li {
-    border-right: #001b38 solid 2px; }
-
-.mapaFooter {
-  min-width: 20px;
-  max-width: 50px; }
+  color: #001b38;
+  font-weight: 100;
+  font-size: 0.6 rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  footer nav {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    footer nav ul {
+      list-style: none;
+      padding: 0;
+      width: 300px;
+      justify-content: space-between; }
+      footer nav ul li {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 10px 0;
+        margin: 0 auto;
+        border-bottom: 1px #001b38 solid; }
+        footer nav ul li a {
+          text-decoration: none;
+          font-weight: 500; }
+  footer .textosFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center; }
+    footer .textosFooter p {
+      text-align: center; }
+    footer .textosFooter a {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+  footer .mapaFooter {
+    min-width: 15px;
+    max-width: 30px;
+    justify-self: center; }
 
 body {
   background-color: #001b38;
@@ -180,3 +168,85 @@ body {
     right: 1rem; }
   body nav a {
     color: #001b38 !important; }
+
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1em; }
+    footer nav {
+      width: 80vw;
+      max-width: 750px;
+      justify-content: center;
+      margin: 1rem 0; }
+      footer nav ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0; }
+        footer nav ul li {
+          margin: 0;
+          border-bottom: none;
+          width: 100%;
+          justify-content: center; }
+    footer .textosFooter {
+      font-size: 0.9em;
+      width: 90vw;
+      max-width: 850px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 2rem 0; }
+      footer .textosFooter a {
+        text-decoration: none;
+        color: #001b38; }
+        footer .textosFooter a::before {
+          content: url(../../images/mapa.png); } }
+
+@media screen and (min-width: 1200px) {
+  nav a:hover {
+    color: #F79824 !important; }
+  .linkPlanta a:hover {
+    color: #F79824; }
+  .trabajosEspeciales:hover {
+    background: #f79824;
+    background: linear-gradient(15deg, #f79824 0%, #b1c1c0 100%);
+    color: #001b38;
+    font-weight: 700;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.6s; }
+  nav a:hover {
+    color: #F79824 !important; }
+  img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s; }
+  .quienesSomos {
+    filter: grayscale(1); }
+  .quienesSomos:hover {
+    filter: grayscale(0); }
+  .formButton:hover {
+    background: linear-gradient(15deg, #f79824 0%, #b1c1c0 100%);
+    color: #001b38;
+    transform: scale(1.1);
+    transition: transform 0.5s; }
+  h2:hover {
+    animation-name: hoverh2;
+    animation-duration: 0.5s; }
+  @keyframes hoverh2 {
+    0% {
+      transform: translateY(10px); }
+    25% {
+      transform: translateY(0); }
+    50% {
+      transform: translateY(7px); }
+    75% {
+      transform: translateY(0); }
+    100% {
+      transform: translateY(3px); } }
+  .listaClientes a:hover {
+    color: #F79824;
+    font-size: 1.2em; }
+  .textoClientes {
+    max-width: 900px; } }

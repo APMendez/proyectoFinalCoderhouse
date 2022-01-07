@@ -1,11 +1,54 @@
 footer {
     background-color: $grey;
     color: $blue;
-    li {
-        border-right: $blue solid 2px;
+    font-weight: 100;
+    font-size: 0.6 rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    nav {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        ul {
+            list-style: none;
+            padding: 0;
+            width: 300px;
+            justify-content: space-between;
+            li {
+                width: 50%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                padding: 10px 0;
+                margin: 0 auto;
+                border-bottom: 1px $blue solid;
+                a {
+                    text-decoration: none;
+                    font-weight: 500;
+                }
+            }
+        }
     }
-}
-.mapaFooter {
-    min-width: 20px;
-    max-width: 50px;
+    .textosFooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        p {
+            text-align: center;
+        }
+        a {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+    .mapaFooter {
+        min-width: 15px;
+        max-width: 30px;
+        justify-self: center;
+    }
+    
 }
