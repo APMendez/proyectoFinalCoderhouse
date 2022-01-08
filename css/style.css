@@ -31,7 +31,8 @@ footer {
     width: 350px;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin: 1rem 0; }
     footer nav ul {
       list-style: none;
       padding: 0;
@@ -54,15 +55,17 @@ footer {
     justify-content: space-between;
     align-content: center; }
     footer .textosFooter p {
-      text-align: center; }
+      text-align: center;
+      padding: 0.5rem 0; }
     footer .textosFooter a {
       display: flex;
       flex-direction: row;
-      justify-content: center; }
-  footer .mapaFooter {
-    min-width: 15px;
-    max-width: 30px;
-    justify-self: center; }
+      justify-content: center;
+      color: #001b38;
+      text-decoration: none;
+      padding: 0.5rem 0; }
+      footer .textosFooter a::before {
+        content: url(../../images/mapa.png); }
 
 body {
   background-color: #001b38;
@@ -162,7 +165,7 @@ body {
       border-radius: 5px; }
   body .whatsapp {
     width: 15%;
-    max-width: 80px;
+    max-width: 65px;
     position: fixed;
     bottom: 4rem;
     right: 1rem; }
@@ -197,12 +200,13 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      margin: 2rem 0; }
+      margin: 0.5rem 0; }
       footer .textosFooter a {
-        text-decoration: none;
+        text-decoration: underline;
         color: #001b38; }
-        footer .textosFooter a::before {
-          content: url(../../images/mapa.png); } }
+        footer .textosFooter a:hover {
+          color: #F79824;
+          font-weight: 400; } }
 
 @media screen and (min-width: 1200px) {
   nav a:hover {
@@ -218,7 +222,8 @@ body {
     transform: scale(1.1);
     transition: transform 0.6s; }
   nav a:hover {
-    color: #F79824 !important; }
+    color: #F79824 !important;
+    font-weight: 400; }
   img:hover {
     transform: scale(1.1);
     transition: transform 0.5s; }
@@ -228,7 +233,8 @@ body {
     filter: grayscale(0); }
   .formButton:hover {
     background: linear-gradient(15deg, #f79824 0%, #b1c1c0 100%);
-    color: #001b38;
+    color: #001b38 !important;
+    font-weight: 500;
     transform: scale(1.1);
     transition: transform 0.5s; }
   h2:hover {
