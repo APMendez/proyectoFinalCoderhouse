@@ -6,16 +6,52 @@ body {
         min-width: $min-width;
         max-width: $max-width;
     }
-    .fotoMolino {
-        width: 45%;
-        img {
-            width: 90%;
-            @include width(200px, 400px);
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .primeraSeccionIndex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div {
+            width: 95vw;
+            h2 {
+                margin: 1.1rem 0 ;
+            }
+        }
+        .fotoMolino {
+            width: 80vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            img {
+                width: 90%;
+                @include width(200px, 400px);
+            }
         }
     }
+    
+    .segundaSeccionIndex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .segundoTextoIndex {
+            width: 95vw;
+            max-width: 800px;
+            h2 {
+                margin: 3.5rem 0 1.1rem 0 ;
+            }
+        }
+    }
+
     iframe {
-        width: 90%;
+        width: 95vw;
+        height: 50vh;
         @include width(300px, 500px);
+        margin: 2rem 0;
     }
 
     /* --- ANIMACION H1 ---*/
@@ -56,10 +92,6 @@ body {
 
     /* ------------------- */
 
-    h2 {
-        margin: 0 !important;
-    }
-
     $span :(
         color : $orange,
         font-weight : 500
@@ -70,18 +102,34 @@ body {
         font-weight: map-get($span, font-weight);
     }
 
-    .textoServicios {
-        width: 95%;
-        max-width: 600px;
-    }
-
-    .linkPlanta{
-        a {
-            text-decoration: underline;
-            color: $grey;
+    .primeraSeccionServicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        width: 95vw;
+        margin: 3rem auto 0 auto;
+        .textoServicios {
+            max-width: 800px;
         }
-        
+        .listaServicios {
+            margin-top: 2rem;
+            li {
+                font-weight: 500;
+            }
+            .linkPlanta{
+                a {
+                    text-decoration: underline;
+                    color: $grey;
+                    font-weight: 500;
+                }
+                
+            }
+        }
     }
+    
+
+    
 
     .trabajosEspeciales {
         width: fit-content;
@@ -91,29 +139,25 @@ body {
         border-radius: 10px;
         font-size: large;
         font-weight: 700;
+        a {
+            text-decoration: none;
+            color: $grey;
+        }
     }
     .medidaCarousel {
-        width: 70%;
-        max-width: 1200px;
+        width: 85vw;
+        max-width: 1400px;
     }
-    .quienesSomos {
-        width: 90%;
-        @include width(350px, 450px);
-        margin: 5rem 2rem;
-    }
-    .textoQuienes {
-        max-width: 700px;
-    }
-    .filaQuienes {
-        height: 50vh;
-    }
-    .imgEquipo {
-        width: 90%;
-        @include width(350px, 600px);
-    }
-
-    .textoMision {
-        max-width: 900px;
+    .seccionQuienes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .quienesSomos {
+            .fotoQuienes {
+                width: 95vw;
+                max-width: 300px;
+            }
+        } 
     }
     .imgClientes {
         @extend .imgEquipo;
