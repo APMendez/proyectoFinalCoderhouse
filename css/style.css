@@ -161,21 +161,37 @@ body {
   body .medidaCarousel {
     width: 85vw;
     max-width: 1400px; }
-  body .quienesSomos {
-    width: 90%;
-    min-width: 350px;
-    max-width: 450px;
-    margin: 5rem 2rem; }
-  body .textoQuienes {
-    max-width: 700px; }
-  body .filaQuienes {
-    height: 50vh; }
-  body .imgEquipo, body .imgClientes {
-    width: 90%;
-    min-width: 350px;
-    max-width: 600px; }
-  body .textoMision {
-    max-width: 900px; }
+  body .h1Quienes {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2.8rem; }
+  body .seccionQuienes {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body .seccionQuienes .quienesSomos .imgQuienes, body .seccionQuienes .quienesSomos .imgClientes {
+      width: 95vw;
+      max-width: 800px;
+      padding: 3rem 0; }
+    body .seccionQuienes .textoQuienes {
+      width: 95vw;
+      max-width: 800px; }
+  body .seccionMision {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 3rem; }
+    body .seccionMision .textoMision {
+      width: 95vw;
+      max-width: 800px; }
+      body .seccionMision .textoMision h2 {
+        margin-top: 1rem 0; }
+    body .seccionMision .equipo {
+      margin-bottom: 2rem; }
+      body .seccionMision .equipo .imgEquipo {
+        width: 95vw;
+        max-width: 800px;
+        padding: 3rem 0; }
   body .imgClientes {
     border-radius: 5px; }
   body .listaClientes a {
@@ -286,10 +302,39 @@ body {
   body img:hover {
     transform: scale(1.1);
     transition: transform 0.5s; }
-  body .quienesSomos {
+  body .h1Quienes {
+    text-align: center;
+    margin: 4rem 0;
+    font-size: 2.8rem; }
+  body .quienesSomos .fotoQuienes {
     filter: grayscale(1); }
-    body .quienesSomos:hover {
+    body .quienesSomos .fotoQuienes:hover {
       filter: grayscale(0); }
+  body .seccionQuienes {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly; }
+    body .seccionQuienes .quienesSomos {
+      width: 45vw;
+      max-width: 700px; }
+      body .seccionQuienes .quienesSomos .imgQuienes, body .seccionQuienes .quienesSomos .imgClientes {
+        width: 45vw;
+        max-width: 700px; }
+    body .seccionQuienes .textoQuienes {
+      width: 45vw;
+      max-width: 700px; }
+  body .seccionMision {
+    flex-direction: column; }
+    body .seccionMision .textoMision {
+      width: 60vw;
+      max-width: 900px;
+      margin: 3rem 0; }
+    body .seccionMision .equipo {
+      width: 45vw;
+      max-width: 700px; }
+      body .seccionMision .equipo .imgEquipo {
+        width: 45vw;
+        max-width: 700px; }
   body .formButton:hover {
     background: linear-gradient(15deg, #f79824 0%, #b1c1c0 100%);
     color: #001b38 !important;
