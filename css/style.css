@@ -163,13 +163,13 @@ body {
     max-width: 1400px; }
   body .h1Quienes {
     text-align: center;
-    margin: 2rem 0;
-    font-size: 2.8rem; }
+    margin-top: 2rem;
+    font-size: 2rem; }
   body .seccionQuienes {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    body .seccionQuienes .quienesSomos .imgQuienes, body .seccionQuienes .quienesSomos .imgClientes {
+    body .seccionQuienes .quienesSomos .imgQuienes {
       width: 95vw;
       max-width: 800px;
       padding: 3rem 0; }
@@ -192,10 +192,55 @@ body {
         width: 95vw;
         max-width: 800px;
         padding: 3rem 0; }
-  body .imgClientes {
-    border-radius: 5px; }
-  body .listaClientes a {
-    color: #d4d4d4; }
+  body .h1Clientes {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem; }
+  body .seccionClientes {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body .seccionClientes .imgClientes {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 95vw;
+      max-width: 800px; }
+      body .seccionClientes .imgClientes img {
+        width: 95vw;
+        max-width: 800px;
+        padding: 3rem 0; }
+    body .seccionClientes .clientes {
+      width: 50vw;
+      max-width: 800px; }
+      body .seccionClientes .clientes .listaClientes {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        body .seccionClientes .clientes .listaClientes li {
+          width: 50vw;
+          max-width: 250px;
+          padding: 0.3rem 0.5rem;
+          margin: 0.5rem 0;
+          text-align: center;
+          border: 1px #F79824 solid;
+          border-radius: 5px; }
+          body .seccionClientes .clientes .listaClientes li a {
+            width: 50vw;
+            max-width: 250px;
+            color: #d4d4d4;
+            text-decoration: none; }
+  body .seccionAgradecimiento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0; }
+    body .seccionAgradecimiento .agradecimiento {
+      width: 95vw;
+      max-width: 800px; }
+      body .seccionAgradecimiento .agradecimiento h2 {
+        text-align: center; }
   body .formulario {
     display: flex;
     flex-direction: column;
@@ -261,7 +306,19 @@ body {
           color: #F79824;
           font-weight: 400; }
   body .primeraSeccionIndex .primerTextoIndex {
-    max-width: 800px; } }
+    max-width: 800px; }
+  body .h1Clientes {
+    margin: 3rem 0 1rem 0; }
+  body .seccionClientes .clientes {
+    width: 90vw;
+    max-width: 775px; }
+    body .seccionClientes .clientes .listaClientes {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap; }
+      body .seccionClientes .clientes .listaClientes li {
+        margin: 1rem 0; } }
 
 @media screen and (min-width: 1200px) {
   body nav a:hover {
@@ -317,7 +374,7 @@ body {
     body .seccionQuienes .quienesSomos {
       width: 45vw;
       max-width: 700px; }
-      body .seccionQuienes .quienesSomos .imgQuienes, body .seccionQuienes .quienesSomos .imgClientes {
+      body .seccionQuienes .quienesSomos .imgQuienes {
         width: 45vw;
         max-width: 700px; }
     body .seccionQuienes .textoQuienes {
@@ -355,8 +412,14 @@ body {
       transform: translateY(0); }
     100% {
       transform: translateY(3px); } }
-  body .listaClientes a:hover {
-    color: #F79824;
-    font-size: 1.2em; }
-  body .textoClientes {
-    max-width: 900px; } }
+  body .seccionClientes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    body .seccionClientes .clientes .listaClientes a {
+      width: 50vw;
+      max-width: 250px; }
+      body .seccionClientes .clientes .listaClientes a:hover {
+        color: #F79824; }
+  body .seccionAgradecimiento {
+    margin: 4rem 0; } }

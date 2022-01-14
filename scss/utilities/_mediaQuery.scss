@@ -54,6 +54,24 @@
                 max-width: 800px;
             }
         }
+        .h1Clientes {
+            margin: 3rem 0 1rem 0;
+        }
+        .seccionClientes {
+            .clientes {
+                width: 90vw;
+                max-width: 775px;
+                .listaClientes {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    li {
+                        margin: 1rem 0;
+                    }
+                }
+            }
+        }
     }
 
 }
@@ -221,18 +239,25 @@
                 transform: translateY(3px);
             }
         }
-
-        .listaClientes {
-            a {
-                &:hover {
-                    color: $orange;
-                    font-size: 1.2em;
+        .seccionClientes {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            .clientes {
+                .listaClientes {
+                    a {
+                        width: 50vw;
+                        max-width: 250px;
+                        &:hover {
+                            color: $orange;
+                        }
+                    }
                 }
             }
         }
-
-        .textoClientes {
-            max-width: 900px;
+        .seccionAgradecimiento {
+            margin: 4rem 0;
         }
+        
     }
 }
