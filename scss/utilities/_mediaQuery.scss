@@ -3,8 +3,63 @@
         /* ====INDEX */
 
         .primeraSeccionIndex {
+            .fotosIndex {
+                display: inline-block;
+                width: 95vw;
+                max-width: 600px;
+                max-height: 500px;
+                .img1Index {
+                    display: block;
+                    width: 40vw;
+                    max-width: 350px;
+                    position: relative;
+                    left: 20rem;
+                    top: 17rem;
+                    z-index: 1;
+                    filter: grayscale(0);
+                    animation: entradaFotoDerecha 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                }
+                .img2Index {
+                    position: relative;
+                    bottom: 10rem;
+                    animation: entradaFotoIzquierda 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                }
+                .img3Index {
+                    display: block;
+                    width: 40vw;
+                    max-width: 250px;
+                    position: relative;
+                    bottom: 30rem;
+                    left: 22rem;
+                    z-index: -1;
+                    animation: entradaFotoDerecha 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    filter: grayscale(1);
+                }
+            }
             .primerTextoIndex {
                 max-width: 800px;
+            }
+            @keyframes entradaFotoDerecha {
+                0% {
+                    transform: translateX(2000px);
+                    opacity: 0;
+                }
+
+                100% {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+            @keyframes entradaFotoIzquierda {
+                0% {
+                    transform: translateX(-2000px);
+                    opacity: 0;
+                }
+
+                100% {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
             }
         }
 
@@ -145,15 +200,28 @@
                 width: 45vw;
             }
 
-            .fotoMolino {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                width: 45vw;
-
+            .fotosIndex {
+                display: block;
+                position: relative;
+                right: 5rem;
+                width: 40vw;
+                max-width: 500px;
                 img {
-                    width: 90%;
                     @include width(200px, 400px);
+                }
+                .img2Index {
+                    &:hover {
+                        &:hover {
+                            z-index: 3;
+                            filter: grayscale(0);
+                        }
+                    }
+                }
+                .img3Index {
+                    &:hover {
+                        filter: grayscale(0);
+                        z-index: 3;
+                    }
                 }
             }
         }
