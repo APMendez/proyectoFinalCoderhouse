@@ -31,8 +31,15 @@ body {
 
         div {
             width: 95vw;
+
             h2 {
                 margin: 1.1rem 0;
+            }
+        }
+        .primerTextoIndex {
+            p {
+            -webkit-animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
             }
         }
 
@@ -41,21 +48,26 @@ body {
             flex-direction: row;
             justify-content: center;
             width: fit-content;
+
             img {
                 clip-path: circle();
             }
+
             .img1Index {
                 display: none;
             }
+
             .img2Index {
                 width: 95vw;
                 max-width: 500px;
                 animation: entradaFotoDerecha 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                 filter: grayscale(1);
             }
+
             .img3Index {
                 display: none;
             }
+
             @keyframes entradaFotoDerecha {
                 0% {
                     transform: translateX(2000px);
@@ -82,6 +94,10 @@ body {
             h2 {
                 margin: 3.5rem 0 1.1rem 0;
             }
+            p {
+                -webkit-animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+                animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            }
         }
     }
 
@@ -93,35 +109,37 @@ body {
     }
 
     /* --- ANIMACION H1 ---*/
+    @-webkit-keyframes text-focus-in {
+        0% {
+            -webkit-filter: blur(12px);
+            filter: blur(12px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-filter: blur(0px);
+            filter: blur(0px);
+            opacity: 1;
+        }
+    }
+
+    @keyframes text-focus-in {
+        0% {
+            -webkit-filter: blur(12px);
+            filter: blur(12px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-filter: blur(0px);
+            filter: blur(0px);
+            opacity: 1;
+        }
+    }
+
     h1 {
-        -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-        animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-    }
-
-    @-webkit-keyframes tracking-in-expand {
-        0% {
-            letter-spacing: -0.5em;
-            opacity: 0;
-        }
-        40% {
-            opacity: 0.6;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-
-    @keyframes tracking-in-expand {
-        0% {
-            letter-spacing: -0.5em;
-            opacity: 0;
-        }
-        40% {
-            opacity: 0.6;
-        }
-        100% {
-            opacity: 1;
-        }
+        -webkit-animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     }
 
     /* ------------------- */
@@ -145,9 +163,10 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        width: 100vw !important;
 
         .medidaCarousel {
-            width: 95vw !important;
+            width: 100% !important;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -208,11 +227,6 @@ body {
         }
     }
 
-    .medidaCarousel {
-        width: 85vw;
-        max-width: 1400px;
-    }
-
     /* ====QUIENES SOMOS */
 
     .h1Quienes {
@@ -252,6 +266,10 @@ body {
         .textoQuienes {
             width: 95vw;
             max-width: 800px;
+            p {
+                -webkit-animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+                animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            }
         }
     }
 
@@ -326,7 +344,7 @@ body {
                     text-align: center;
                     border: 1px $orange solid;
                     border-radius: 5px;
-
+                    animation: entradaFotoDerecha 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                     a {
                         width: 50vw;
                         max-width: 250px;
@@ -351,8 +369,6 @@ body {
             h2 {
                 text-align: center;
             }
-
-            .textoClientes {}
         }
     }
 
@@ -388,12 +404,14 @@ body {
                     transform-origin: top;
                     opacity: 0;
                 }
+
                 100% {
                     transform: rotateX(0deg);
                     transform-origin: top;
                     opacity: 1;
                 }
             }
+
             animation: swing-in-top-fwd 1.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 
         }

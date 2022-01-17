@@ -91,6 +91,9 @@ body {
       width: 95vw; }
       body .primeraSeccionIndex div h2 {
         margin: 1.1rem 0; }
+    body .primeraSeccionIndex .primerTextoIndex p {
+      -webkit-animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+      animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
     body .primeraSeccionIndex .fotosIndex {
       display: flex;
       flex-direction: row;
@@ -124,33 +127,38 @@ body {
       max-width: 800px; }
       body .segundaSeccionIndex .segundoTextoIndex h2 {
         margin: 3.5rem 0 1.1rem 0; }
+      body .segundaSeccionIndex .segundoTextoIndex p {
+        -webkit-animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+        animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
   body iframe {
     width: 95vw;
     height: 50vh;
     min-width: 300px;
     max-width: 500px;
     margin: 2rem 0; }
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
   body h1 {
-    -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-    animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
-
-@-webkit-keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0; }
-  40% {
-    opacity: 0.6; }
-  100% {
-    opacity: 1; } }
-
-@keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0; }
-  40% {
-    opacity: 0.6; }
-  100% {
-    opacity: 1; } }
+    -webkit-animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
   body span {
     color: #F79824;
     font-weight: 500; }
@@ -160,9 +168,10 @@ body {
   body .carousel {
     display: flex;
     flex-direction: row;
-    justify-content: center; }
+    justify-content: center;
+    width: 100vw !important; }
     body .carousel .medidaCarousel {
-      width: 95vw !important;
+      width: 100% !important;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -200,9 +209,6 @@ body {
       color: #d4d4d4;
       display: block;
       padding: 0.5rem; }
-  body .medidaCarousel {
-    width: 85vw;
-    max-width: 1400px; }
   body .h1Quienes {
     text-align: center;
     margin-top: 2rem;
@@ -227,6 +233,9 @@ body {
     body .seccionQuienes .textoQuienes {
       width: 95vw;
       max-width: 800px; }
+      body .seccionQuienes .textoQuienes p {
+        -webkit-animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+        animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
   body .seccionMision {
     display: flex;
     flex-direction: column-reverse;
@@ -276,7 +285,8 @@ body {
           margin: 0.5rem 0;
           text-align: center;
           border: 1px #F79824 solid;
-          border-radius: 5px; }
+          border-radius: 5px;
+          animation: entradaFotoDerecha 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
           body .seccionClientes .clientes .listaClientes li a {
             width: 50vw;
             max-width: 250px;
@@ -580,7 +590,8 @@ body {
           body .seccionClientes .clientes .listaClientes li {
             width: 45vw;
             max-width: 250px;
-            padding: 0; }
+            padding: 0;
+            animation: none; }
             body .seccionClientes .clientes .listaClientes li:hover {
               background: #f79824;
               background: linear-gradient(15deg, #f79824 0%, #b1c1c0 100%);
