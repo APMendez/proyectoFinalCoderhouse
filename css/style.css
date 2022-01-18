@@ -10,14 +10,7 @@ header {
   header img {
     min-width: 100px;
     max-width: 150px;
-    margin: 1rem 0;
-    animation: entradaLogo 2s 0.4s; }
-
-@keyframes entradaLogo {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+    margin: 1rem 0; }
 
 footer {
   background-color: #d4d4d4;
@@ -171,7 +164,8 @@ body {
     justify-content: center;
     width: 100vw !important; }
     body .carousel .medidaCarousel {
-      width: 100% !important;
+      width: 100vw !important;
+      max-width: 1280px;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -218,18 +212,13 @@ body {
     flex-direction: column;
     align-items: center; }
     body .seccionQuienes .quienesSomos .imgQuienes {
-      width: 95vw;
+      width: 100vw;
       max-width: 800px;
-      padding: 3rem 0;
-      animation: roll-in-right 0.6s ease-out both; }
-
-@keyframes roll-in-right {
-  0% {
-    transform: translateX(800px) rotate(540deg);
-    opacity: 0; }
-  100% {
-    transform: translateX(0) rotate(0deg);
-    opacity: 1; } }
+      padding: 3rem 0; }
+    body .seccionQuienes .quienesSomos .imgQuienes2 {
+      display: none; }
+    body .seccionQuienes .quienesSomos .imgQuienes3 {
+      display: none; }
     body .seccionQuienes .textoQuienes {
       width: 95vw;
       max-width: 800px; }
@@ -249,8 +238,8 @@ body {
     body .seccionMision .equipo {
       margin-bottom: 2rem; }
       body .seccionMision .equipo .imgEquipo {
-        width: 95vw;
-        max-width: 800px;
+        width: 100vw;
+        max-width: 900px;
         padding: 3rem 0; }
   body .h1Clientes {
     text-align: center;
@@ -333,6 +322,12 @@ body {
     transform: rotateX(0deg);
     transform-origin: top;
     opacity: 1; } }
+  body .mapaContacto {
+    width: 100vw;
+    max-width: 900px;
+    height: 80vh;
+    max-height: 900px;
+    padding-bottom: 2rem; }
   body .whatsapp {
     width: 15%;
     max-width: 65px;
@@ -340,7 +335,7 @@ body {
     bottom: 4rem;
     right: 1rem;
     z-index: 2;
-    animation: bounce-in-top 1.1s both; }
+    animation: bounce-in-top 1.5s both; }
 
 @keyframes bounce-in-top {
   0% {
@@ -541,31 +536,53 @@ body {
     body .seccionQuienes {
       display: flex;
       flex-direction: row-reverse;
-      justify-content: space-evenly; }
+      justify-content: space-evenly;
+      align-content: center; }
       body .seccionQuienes .quienesSomos {
         width: 45vw;
-        max-width: 700px; }
+        max-width: 700px;
+        height: 80vh; }
         body .seccionQuienes .quienesSomos .imgQuienes {
-          width: 45vw;
-          max-width: 700px;
-          filter: grayscale(0.7); }
+          width: 80%;
+          max-width: 500px;
+          animation: none;
+          filter: grayscale(0.7);
+          display: block;
+          position: relative;
+          left: 8rem;
+          top: 3rem;
+          z-index: 2;
+          clip-path: circle(); }
           body .seccionQuienes .quienesSomos .imgQuienes:hover {
             filter: grayscale(0); }
+        body .seccionQuienes .quienesSomos .imgQuienes2 {
+          display: block;
+          position: relative;
+          bottom: 30rem;
+          right: 3rem;
+          width: 70%;
+          max-width: 350px;
+          clip-path: circle();
+          filter: grayscale(0.7); }
+          body .seccionQuienes .quienesSomos .imgQuienes2:hover {
+            z-index: 3;
+            filter: grayscale(0); }
+        body .seccionQuienes .quienesSomos .imgQuienes3 {
+          display: block;
+          position: relative;
+          bottom: 32rem;
+          width: 40%;
+          max-width: 250px;
+          clip-path: circle();
+          z-index: -1; }
       body .seccionQuienes .textoQuienes {
         width: 45vw;
         max-width: 700px; }
     body .seccionMision {
       flex-direction: column; }
       body .seccionMision .textoMision {
-        width: 60vw;
         max-width: 900px;
         margin: 3rem 0; }
-      body .seccionMision .equipo {
-        width: 45vw;
-        max-width: 700px; }
-        body .seccionMision .equipo .imgEquipo {
-          width: 45vw;
-          max-width: 700px; }
     body .seccionClientes {
       display: flex;
       flex-direction: row;
