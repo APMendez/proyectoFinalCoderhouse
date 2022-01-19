@@ -356,7 +356,7 @@ body {
     body .formulario .formButton {
       width: 45%;
       align-self: center;
-      margin: 0.2rem;
+      margin-top: 1.2rem;
       background-color: #001b38;
       color: #F79824;
       border: #F79824 solid 2px;
