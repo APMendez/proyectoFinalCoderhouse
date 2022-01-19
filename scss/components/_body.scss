@@ -36,10 +36,11 @@ body {
                 margin: 1.1rem 0;
             }
         }
+
         .primerTextoIndex {
             p {
-            -webkit-animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-            animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+                -webkit-animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+                animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
             }
         }
 
@@ -94,6 +95,7 @@ body {
             h2 {
                 margin: 3.5rem 0 1.1rem 0;
             }
+
             p {
                 -webkit-animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
                 animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -247,9 +249,11 @@ body {
                 max-width: 800px;
                 padding: 3rem 0;
             }
+
             .imgQuienes2 {
                 display: none;
             }
+
             .imgQuienes3 {
                 display: none;
             }
@@ -258,6 +262,7 @@ body {
         .textoQuienes {
             width: 95vw;
             max-width: 800px;
+
             p {
                 -webkit-animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
                 animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -308,14 +313,28 @@ body {
             display: flex;
             flex-direction: row;
             justify-content: center;
-            width: 95vw;
+            width: 100vw;
             max-width: 800px;
 
             img {
-                width: 95vw;
+                width: 100vw;
                 max-width: 800px;
                 padding: 3rem 0;
+                animation: entradaIzq 1.5s ease-in-out both;
             }
+
+            @keyframes entradaIzq {
+                0% {
+                    transform: translateX(-1000px);
+                    opacity: 0;
+                }
+
+                100% {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+
         }
 
         .clientes {
@@ -337,6 +356,7 @@ body {
                     border: 1px $orange solid;
                     border-radius: 5px;
                     animation: entradaFotoDerecha 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
                     a {
                         width: 50vw;
                         max-width: 250px;
@@ -408,6 +428,7 @@ body {
 
         }
     }
+
     .mapaContacto {
         width: 100vw;
         max-width: 900px;
