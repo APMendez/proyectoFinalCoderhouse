@@ -14,12 +14,26 @@ body {
         max-width: $max-width;
     }
 
+    /* --- ANIMACION H1 ---*/
+    @keyframes text-focus-in {
+        0% {
+            filter: blur(12px);
+            opacity: 0;
+        }
+
+        100% {
+            filter: blur(0px);
+            opacity: 1;
+        }
+    }
+
     h1 {
-        font-size: 2rem;
+        animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        font-size: $h1FontSize;
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: $h2FontSize;
     }
 
     /* ====INDEX==== */
@@ -50,16 +64,14 @@ body {
             justify-content: center;
             width: fit-content;
 
-            img {
-                clip-path: circle();
-            }
+
 
             .img1Index {
                 display: none;
             }
 
             .img2Index {
-                width: 95vw;
+                width: 100vw;
                 max-width: 500px;
                 animation: entradaFotoDerecha 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                 filter: grayscale(1);
@@ -104,45 +116,13 @@ body {
     }
 
     iframe {
-        width: 95vw;
+        width: 100vw;
         height: 50vh;
-        @include width(300px, 500px);
+        @include width(300px, 800px);
         margin: 2rem 0;
     }
 
-    /* --- ANIMACION H1 ---*/
-    @-webkit-keyframes text-focus-in {
-        0% {
-            -webkit-filter: blur(12px);
-            filter: blur(12px);
-            opacity: 0;
-        }
-
-        100% {
-            -webkit-filter: blur(0px);
-            filter: blur(0px);
-            opacity: 1;
-        }
-    }
-
-    @keyframes text-focus-in {
-        0% {
-            -webkit-filter: blur(12px);
-            filter: blur(12px);
-            opacity: 0;
-        }
-
-        100% {
-            -webkit-filter: blur(0px);
-            filter: blur(0px);
-            opacity: 1;
-        }
-    }
-
-    h1 {
-        -webkit-animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-        animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    }
+    
 
     /* ------------------- */
 
@@ -197,7 +177,8 @@ body {
 
                 li {
                     font-weight: 500;
-                    line-height: 2rem;
+                    line-height: 3rem;
+                    padding: auto 0;
                 }
 
                 .linkPlanta {
@@ -235,7 +216,6 @@ body {
     .h1Quienes {
         text-align: center;
         margin-top: 2rem;
-        font-size: 2rem;
     }
 
     .seccionQuienes {
@@ -392,7 +372,7 @@ body {
         align-content: flex-start;
         justify-content: space-between;
 
-        width: 95%;
+        width: 95vw;
         max-width: 800px;
         height: 80vh;
         padding: 2rem;
@@ -409,6 +389,7 @@ body {
             color: $orange;
             border: $orange solid 2px;
             border-radius: 5px;
+            animation: swing-in-top-fwd 1.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 
             @keyframes swing-in-top-fwd {
                 0% {
@@ -416,16 +397,21 @@ body {
                     transform-origin: top;
                     opacity: 0;
                 }
-
                 100% {
                     transform: rotateX(0deg);
                     transform-origin: top;
                     opacity: 1;
                 }
             }
+        }
+        input {
+            &:focus {
+                transform: scale(1.1);
+            }
+        }
 
-            animation: swing-in-top-fwd 1.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-
+        .formTextArea {
+            height: 20vh;
         }
     }
 

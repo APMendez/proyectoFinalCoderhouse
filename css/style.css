@@ -103,8 +103,8 @@ footer {
 body {
   background-color: #001b38;
   color: #d4d4d4;
-  /* ====INDEX==== */
   /* --- ANIMACION H1 ---*/
+  /* ====INDEX==== */
   /* ------------------- */
   /* ====SERVICIOS==== */
   /* ====QUIENES SOMOS */
@@ -113,7 +113,16 @@ body {
   /* ===BOTON WHATSAPP==== */ }
   body nav a {
     color: #001b38 !important; }
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    filter: blur(0px);
+    opacity: 1; } }
   body h1 {
+    animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
     font-size: 2rem; }
   body h2 {
     font-size: 1.5rem; }
@@ -133,12 +142,10 @@ body {
       flex-direction: row;
       justify-content: center;
       width: fit-content; }
-      body .primeraSeccionIndex .fotosIndex img {
-        clip-path: circle(); }
       body .primeraSeccionIndex .fotosIndex .img1Index {
         display: none; }
       body .primeraSeccionIndex .fotosIndex .img2Index {
-        width: 95vw;
+        width: 100vw;
         max-width: 500px;
         animation: entradaFotoDerecha 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
         filter: grayscale(1); }
@@ -165,34 +172,11 @@ body {
         -webkit-animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
         animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
   body iframe {
-    width: 95vw;
+    width: 100vw;
     height: 50vh;
     min-width: 300px;
-    max-width: 500px;
+    max-width: 800px;
     margin: 2rem 0; }
-
-@-webkit-keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0; }
-  100% {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1; } }
-
-@keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0; }
-  100% {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1; } }
-  body h1 {
-    -webkit-animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-    animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
   body span {
     color: #F79824;
     font-weight: 500; }
@@ -226,7 +210,8 @@ body {
         list-style-image: url(../images/gear.png); }
         body .primeraSeccionServicios .listaServicios ul li {
           font-weight: 500;
-          line-height: 2rem; }
+          line-height: 3rem;
+          padding: auto 0; }
         body .primeraSeccionServicios .listaServicios ul .linkPlanta a {
           text-decoration: underline;
           color: #F79824;
@@ -246,8 +231,7 @@ body {
       padding: 0.5rem; }
   body .h1Quienes {
     text-align: center;
-    margin-top: 2rem;
-    font-size: 2rem; }
+    margin-top: 2rem; }
   body .seccionQuienes {
     display: flex;
     flex-direction: column;
@@ -346,7 +330,7 @@ body {
     flex-direction: column;
     align-content: flex-start;
     justify-content: space-between;
-    width: 95%;
+    width: 95vw;
     max-width: 800px;
     height: 80vh;
     padding: 2rem;
@@ -372,6 +356,10 @@ body {
     transform: rotateX(0deg);
     transform-origin: top;
     opacity: 1; } }
+    body .formulario input:focus {
+      transform: scale(1.1); }
+    body .formulario .formTextArea {
+      height: 20vh; }
   body .mapaContacto {
     width: 100vw;
     max-width: 900px;
@@ -434,11 +422,13 @@ body {
         top: 17rem;
         z-index: 1;
         filter: grayscale(0);
-        animation: entradaFotoDerecha 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+        animation: entradaFotoDerecha 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        clip-path: circle(); }
       body .primeraSeccionIndex .fotosIndex .img2Index {
         position: relative;
         bottom: 10rem;
-        animation: entradaFotoIzquierda 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+        animation: entradaFotoIzquierda 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        clip-path: circle(); }
       body .primeraSeccionIndex .fotosIndex .img3Index {
         display: block;
         width: 40vw;
@@ -448,7 +438,8 @@ body {
         left: 22rem;
         z-index: -1;
         animation: entradaFotoDerecha 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-        filter: grayscale(1); }
+        filter: grayscale(1);
+        clip-path: circle(); }
     body .primeraSeccionIndex .primerTextoIndex {
       max-width: 800px; }
   @keyframes entradaFotoDerecha {
@@ -554,7 +545,7 @@ body {
         body .primeraSeccionIndex .fotosIndex img {
           min-width: 200px;
           max-width: 400px; }
-        body .primeraSeccionIndex .fotosIndex .img2Index:hover:hover {
+        body .primeraSeccionIndex .fotosIndex .img2Index:hover {
           z-index: 3;
           filter: grayscale(0); }
         body .primeraSeccionIndex .fotosIndex .img3Index:hover {
