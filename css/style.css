@@ -362,7 +362,10 @@ body {
     body .formulario .formTextArea {
       background-color: transparent;
       border-color: #F79824;
-      resize: none; }
+      resize: none;
+      color: #d4d4d4; }
+      body .formulario .formTextArea:focus {
+        border: turquoise 2px solid; }
   body .mapaContacto {
     width: 100vw;
     max-width: 900px;

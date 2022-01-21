@@ -412,6 +412,10 @@ body {
             background-color: transparent;
             border-color: $orange;
             resize: none;
+            color: $grey;
+            &:focus {
+                border: turquoise 2px solid;
+            }
         }
     }
 
