@@ -373,18 +373,20 @@ body {
         justify-content: space-between;
 
         width: 95vw;
-        max-width: 800px;
-        height: 80vh;
-        padding: 2rem;
+        max-width: 900px;
+        height: 120vh;
+        padding: 2rem 1rem;
         margin: 2rem 0;
-
-        border: $grey solid 2px;
-        border-radius: 10px;
-
+        font-family: inherit;
+        font-weight: 700;
+        h2 {
+            padding: 1rem 0;
+        }
         .formButton {
-            width: 45%;
+            width: 100%;
             align-self: center;
             margin-top: 1.2rem;
+            padding: 1rem 0;
             background-color: $blue;
             color: $orange;
             border: $orange solid 2px;
@@ -404,14 +406,26 @@ body {
                 }
             }
         }
-        input {
+        .formInput {
+            color: $grey;
+            background-color: transparent;
+            border:none;
+            border-bottom: $orange 2px solid;
             &:focus {
-                transform: scale(1.1);
+                border: none;
+                border-bottom: turquoise 2px solid;
+            }
+            option {
+                background-color: $blue;
+                color: $grey;
             }
         }
 
         .formTextArea {
-            height: 20vh;
+            
+            background-color: transparent;
+            border-color: $orange;
+            resize: none;
         }
     }
 

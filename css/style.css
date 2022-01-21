@@ -331,16 +331,19 @@ body {
     align-content: flex-start;
     justify-content: space-between;
     width: 95vw;
-    max-width: 800px;
-    height: 80vh;
-    padding: 2rem;
+    max-width: 900px;
+    height: 120vh;
+    padding: 2rem 1rem;
     margin: 2rem 0;
-    border: #d4d4d4 solid 2px;
-    border-radius: 10px; }
+    font-family: inherit;
+    font-weight: 700; }
+    body .formulario h2 {
+      padding: 1rem 0; }
     body .formulario .formButton {
-      width: 45%;
+      width: 100%;
       align-self: center;
       margin-top: 1.2rem;
+      padding: 1rem 0;
       background-color: #001b38;
       color: #F79824;
       border: #F79824 solid 2px;
@@ -356,10 +359,21 @@ body {
     transform: rotateX(0deg);
     transform-origin: top;
     opacity: 1; } }
-    body .formulario input:focus {
-      transform: scale(1.1); }
+    body .formulario .formInput {
+      color: #d4d4d4;
+      background-color: transparent;
+      border: none;
+      border-bottom: #F79824 2px solid; }
+      body .formulario .formInput:focus {
+        border: none;
+        border-bottom: turquoise 2px solid; }
+      body .formulario .formInput option {
+        background-color: #001b38;
+        color: #d4d4d4; }
     body .formulario .formTextArea {
-      height: 20vh; }
+      background-color: transparent;
+      border-color: #F79824;
+      resize: none; }
   body .mapaContacto {
     width: 100vw;
     max-width: 900px;
