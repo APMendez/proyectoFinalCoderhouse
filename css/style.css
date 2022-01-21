@@ -347,18 +347,7 @@ body {
       background-color: #001b38;
       color: #F79824;
       border: #F79824 solid 2px;
-      border-radius: 5px;
-      animation: swing-in-top-fwd 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
-
-@keyframes swing-in-top-fwd {
-  0% {
-    transform: rotateX(-100deg);
-    transform-origin: top;
-    opacity: 0; }
-  100% {
-    transform: rotateX(0deg);
-    transform-origin: top;
-    opacity: 1; } }
+      border-radius: 5px; }
     body .formulario .formInput {
       color: #d4d4d4;
       background-color: transparent;
@@ -688,4 +677,5 @@ body {
       color: #001b38 !important;
       font-weight: 500;
       transform: scale(1.1);
+      transform: translateY(-10px);
       transition: transform 0.5s; } }

@@ -391,20 +391,6 @@ body {
             color: $orange;
             border: $orange solid 2px;
             border-radius: 5px;
-            animation: swing-in-top-fwd 1.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-
-            @keyframes swing-in-top-fwd {
-                0% {
-                    transform: rotateX(-100deg);
-                    transform-origin: top;
-                    opacity: 0;
-                }
-                100% {
-                    transform: rotateX(0deg);
-                    transform-origin: top;
-                    opacity: 1;
-                }
-            }
         }
         .formInput {
             color: $grey;
